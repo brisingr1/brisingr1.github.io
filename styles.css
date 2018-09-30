@@ -1,0 +1,80 @@
+
+/* To remove list bullets, padding, and margins from the ul navigation bars 
+   Copied the code from: https://www.w3schools.com/css/css_navbar.asp;
+*/ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    /* To make the nav bar stay at the top even if the user scrolls down */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+h1
+{
+    color: lightblue;
+}
+
+h3
+{
+    position: relative;
+    top: 200px;
+    z-index: 5;
+}
+
+h4
+{
+    position: absolute;
+    left: 150px;
+    bottom: -100px;
+}
+
+img
+{
+    position: relative;
+    z-index: 2;
+}
+
+body
+{
+    border: dashed;
+    border-color: gold;
+}
+/* Got this idea and code from: https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page */
+#nav_bar ul li a.active-page
+{
+  background-color:blue;
+}
+
+/* Got this code from: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
